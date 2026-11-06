@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appala Venkat Sasi Rithvik — Software Developer &amp; Creative Technologist | Founder of REDz</title>
+  
+  <meta name="description" content="Portfolio of Appala Venkat Sasi Rithvik (Rithvik) — Software Developer &amp; Creative Technologist. Founder of REDz. Specializing in applied AI, agentic systems, full-stack engineering, desktop applications, and commercial cinematography." />
+  <meta name="author" content="Appala Venkat Sasi Rithvik" />
+  <meta name="keywords" content="Rithvik, Sasi Rithvik, REDz, SatQuery AI, Ownly, ConsentLens, Software Developer, Creative Technologist, Applied AI, Full-Stack Engineer, Cinematographer, SRKR" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sasirithvik.vercel.app/" />
+  <meta property="og:title" content="Rithvik — Software Developer &amp; Creative Technologist" />
+  <meta property="og:description" content="Engineering ideas into products. Bringing them to life through design. Founder of REDz (AI · WEB · SYSTEMS)." />
+  <meta property="og:image" content="https://sasirithvik.vercel.app/assets/profile.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rithvik — Software Developer &amp; Creative Technologist" />
+  <meta name="twitter:description" content="Engineering ideas into products. Bringing them to life through design. Founder of REDz." />
+  <meta name="twitter:image" content="https://sasirithvik.vercel.app/assets/profile.jpg" />
+
+  <!-- Icons & Manifest -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Prevent Theme Flash (Defaults to Pure OLED Dark with Liquid Glass) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Persistent Full-Page Ambient Fluid FluxLines WebGL2 Canvas -->
+  <div id="hero-flux-lines" class="flux-lines-container" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       01 — MINIMAL FLOATING GLASS NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-island" aria-label="Main Navigation">
+        <!-- Brand / Monogram -->
+        <a href="#hero" class="nav-brand" aria-label="Rithvik Home">
+          <div class="nav-monogram">
+            <span>R<span class="red-dot">.</span></span>
+          </div>
+          <div class="nav-brand-title">
+            <span>RITHVIK</span>
+            <span class="redz-tag">REDZ</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="nav-links-desktop">
+          <a href="#work" class="nav-link">Engineering</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Capabilities</a>
+          <a href="#creative" class="nav-link" style="color: #FF1A1A; font-weight: 700;">REDz</a>
+          <a href="#credentials" class="nav-link">Credentials</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Actions: Theme Switcher, Resume, Mobile Toggle -->
+        <div class="nav-actions">
+          <a href="#credentials" class="btn-resume star-border">
+            <span>Resume</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+          </a>
+
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle visual theme">
+            <span class="theme-toggle-icon">
+              <!-- Rendered via JS -->
+            </span>
+          </button>
+
+          <button class="nav-toggle" aria-label="Open mobile menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Fullscreen Mobile Navigation Drawer -->
+  <div class="mobile-menu-overlay" aria-hidden="true">
+    <nav class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Overview</a>
+      <a href="#work" class="mobile-nav-link">Pillar 01 · Engineering</a>
+      <a href="#about" class="mobile-nav-link">About &amp; Journey</a>
+      <a href="#skills" class="mobile-nav-link">Technical Stack</a>
+      <a href="#creative" class="mobile-nav-link" style="color: #FF1A1A;">Pillar 02 · REDz Post-Production</a>
+      <a href="#credentials" class="mobile-nav-link">Achievements</a>
+      <a href="#contact" class="mobile-nav-link">Let's Connect</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         02 — HERO SECTION (Editorial First Impression)
+         ====================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="hero-grid">
+          <!-- Left: Narrative & Call to Action -->
+          <div class="hero-content reveal">
+            <div class="hero-status-pill">
+              <span class="status-dot-pulse"></span>
+              <span>Based in India · 3rd-Year CSE · SRKR · Founder, REDz</span>
+            </div>
+
+            <div class="section-eyebrow">SOFTWARE DEVELOPER &amp; CREATIVE TECHNOLOGIST</div>
+
+            <h1 class="hero-title">
+              I build <span class="title-accent">intelligent software</span> and creative digital experiences.
+            </h1>
+
+            <p class="hero-subtitle">
+              Engineering ideas into products. Bringing them to life through design.
+            </p>
+
+            <p class="hero-body-text">
+              I'm Appala Venkat Sasi Rithvik, a Computer Science student, full-stack engineer and founder of REDz. I architect AI-powered systems, desktop automation utilities, collaborative commerce platforms, and direct commercial cinematography — bridging software engineering with visual storytelling.
+            </p>
+
+            <div class="hero-ctas-row">
+              <a href="#work" class="btn-primary star-border">
+                <span>Explore My Work</span>
+                <span class="btn-arrow-bubble">↓</span>
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <span>Let's Connect</span>
+              </a>
+            </div>
+
+            <div class="hero-spec-strip">
+              <div class="hero-spec-item">
+                <span class="spec-number">09+</span>
+                <span class="spec-label">Engineered Systems</span>
+              </div>
+              <div class="hero-spec-item">
+                <span class="spec-number">200+</span>
+                <span class="spec-label">Commercial Reels</span>
+              </div>
+              <div class="hero-spec-item">
+                <span class="spec-number">3x</span>
+                <span class="spec-label">AWS Academy ML/AI</span>
+              </div>
+              <div class="hero-spec-item">
+                <span class="spec-number">REDz</span>
+                <span class="spec-label">Founder &amp; Director</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive 3D Lanyard ID Badge hanging freely from the top -->
+          <div class="hero-visual-side reveal">
+            <div id="hero-lanyard-container" class="lanyard lanyard-standalone"></div>
+            <div class="lanyard-floating-hint">
+              <span class="lanyard-dot"></span>
+              <span>3D ID Badge · Drag or Click to Flip</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         03 — INTRODUCTION & PERSONAL JOURNEY
+         ====================================================================== -->
+    <section id="about" class="section-spacer section-tinted">
+      <div class="container">
+        <div class="section-eyebrow">PERSONAL JOURNEY &amp; PHILOSOPHY</div>
+        <h2 class="section-title">
+          Not just building interfaces.<br />Building the systems behind them.
+        </h2>
+
+        <div class="about-grid" style="margin-top: 3rem;">
+          <!-- Left: Narrative Biography -->
+          <div class="about-narrative reveal">
+            <p class="about-bio-lead">
+              "I enjoy working at the intersection of rigorous software engineering, applied machine learning, and cinematic creative technology."
+            </p>
+
+            <p class="about-bio-text">
+              I'm Appala Venkat Sasi Rithvik, a Computer Science and Engineering student at SRKR Engineering College and the founder of REDz. My technical work spans full-stack web applications, intelligent automation, agentic systems, desktop audio/system utilities, and browser-based creative tools.
+            </p>
+
+            <div class="about-quote-box">
+              <p class="about-quote-text">
+                "Outside engineering, I work in video production, cinematography, motion graphics and creative direction. Through REDz and collaborative creative work, I've worked with businesses to develop digital experiences and high-conversion visual content."
+              </p>
+            </div>
+
+            <p class="about-bio-text">
+              I take pride in owning an idea from its earliest concept — architecting the database, designing the API contracts, crafting the client UI, deploying the infrastructure, and producing the brand film that brings it to market.
+            </p>
+          </div>
+
+          <!-- Right: Compact Evolution Timeline -->
+          <div class="about-timeline reveal">
+            <div class="timeline-deck">
+              <div class="timeline-step double-bezel">
+                <div class="double-bezel-inner timeline-step-inner">
+                  <div class="step-marker">01</div>
+                  <div class="step-content">
+                    <h4>Creative Editing &amp; Visual Storytelling</h4>
+                    <p>Began exploring cinematography, color grading, sound design, and narrative pacing with regional commercial brands.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-step double-bezel">
+                <div class="double-bezel-inner timeline-step-inner">
+                  <div class="step-marker">02</div>
+                  <div class="step-content">
+                    <h4>Frontend Development &amp; Interactive Web Design</h4>
+                    <p>Expanded into modern JavaScript, responsive CSS architecture, GSAP timelines, and DOM-driven dynamic interfaces.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-step double-bezel">
+                <div class="double-bezel-inner timeline-step-inner">
+                  <div class="step-marker">03</div>
+                  <div class="step-content">
+                    <h4>Application Development &amp; AI-Powered Products</h4>
+                    <p>Engineered full-stack tools integrating Gemini Vision APIs, browser-based Whisper transcription, and RESTful backends.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-step double-bezel">
+                <div class="double-bezel-inner timeline-step-inner">
+                  <div class="step-marker">04</div>
+                  <div class="step-content">
+                    <h4>Founded REDz (AI · WEB · SYSTEMS)</h4>
+                    <p>Established a founder-led creative tech venture delivering custom web applications, workflow automation, and commercial video production.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-step double-bezel">
+                <div class="double-bezel-inner timeline-step-inner">
+                  <div class="step-marker">05</div>
+                  <div class="step-content">
+                    <h4>Agentic AI, Desktop Systems &amp; Full-Stack Architecture</h4>
+                    <p>Architecting multi-agent geospatial reasoning (SatQuery AI), collaborative commerce (Ownly), and dual-endpoint audio routers (REDz BT).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-step double-bezel">
+                <div class="double-bezel-inner timeline-step-inner">
+                  <div class="step-marker">06</div>
+                  <div class="step-content">
+                    <h4>Hackathons &amp; Open-Source Initiatives</h4>
+                    <p>Smart India Hackathon 2025 (Agri-Oracle), selected contributor for NSoC 2026 (Nexus Spring of Code), and Prajwalan 2026.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         04 — SELECTED ENGINEERING PROJECTS (The Primary Focus)
+         ====================================================================== -->
+    <section id="work" class="section-spacer">
+      <div class="container">
+        <div class="section-eyebrow">PRIMARY PORTFOLIO PILLAR</div>
+        <h2 class="section-title">Selected Engineering Projects</h2>
+        <p class="section-description">
+          Detailed case studies across applied AI, collaborative full-stack systems, desktop utilities, and in-browser media processing. Click any project to inspect full architecture diagrams and engineering decisions.
+        </p>
+
+        <!-- Editorial Flagship Projects List -->
+        <div class="projects-editorial-list">
+
+          <!-- PROJECT 01: SATQUERY AI -->
+          <article class="project-editorial-card double-bezel reveal" id="project-satquery">
+            <div class="double-bezel-inner project-card-layout">
+              <div class="project-info-side">
+                <span class="project-category-tag">Applied AI / Agentic Systems / Geospatial Intelligence</span>
+                <h3 class="project-main-title">SatQuery AI</h3>
+                <p class="project-tagline">Orbital Remote Sensing &amp; Agentic Intelligence Engine</p>
+                <p class="project-synopsis">
+                  An AI-powered remote sensing platform analyzing satellite imagery through specialized machine learning models coordinated via a ReAct agentic orchestration pipeline. Handles coordinate reference system (CRS) reprojection, pixel-to-metric affine metrology, and dynamic VRAM arbitration targeted for consumer workstations.
+                </p>
+                <div class="project-tech-pills">
+                  <span class="project-tech-pill">Python</span>
+                  <span class="project-tech-pill">FastAPI</span>
+                  <span class="project-tech-pill">Qwen2.5-3B</span>
+                  <span class="project-tech-pill">Florence-2</span>
+                  <span class="project-tech-pill">TinyCD</span>
+                  <span class="project-tech-pill">MobileSAM</span>
+                  <span class="project-tech-pill">GeoTIFF</span>
+                  <span class="project-tech-pill">PyTorch (6GB VRAM)</span>
+                </div>
+                <div class="project-card-actions">
+                  <button class="btn-case-study" data-case-study="satquery">
+                    <span>Inspect Case Study</span>
+                    <span class="arrow-icon">↗</span>
+                  </button>
+                  <a href="https://github.com/Rithvik-bit/satquery" target="_blank" rel="noopener noreferrer" class="btn-source-link">
+                    <span>GitHub Repository</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual-side">
+                <div class="project-preview-frame">
+                  <div class="geospatial-canvas-mock">
+                    <div class="map-grid-overlay"></div>
+                    <div class="bounding-box b-1">
+                      <span>Florence-2 Grounding [EPSG:4326]</span>
+                    </div>
+                    <div class="bounding-box b-2">
+                      <span>TinyCD Temporal Shift [Δ Area +14%]</span>
+                    </div>
+                    <div class="terminal-overlay">
+                      <code>> ReAct: Decomposing natural language query</code><br/>
+                      <code>> VRAM Arbiter: Offloading Florence-2 (2.4GB)</code><br/>
+                      <code>> Dispatching MobileSAM promptable segmentation</code><br/>
+                      <code>> Affine transform: Polygon GeoJSON ready</code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: OWNLY -->
+          <article class="project-editorial-card double-bezel reveal" id="project-ownly">
+            <div class="double-bezel-inner project-card-layout">
+              <div class="project-info-side">
+                <span class="project-category-tag">Full-Stack Engineering / Collaborative Commerce</span>
+                <h3 class="project-main-title">Ownly</h3>
+                <p class="project-tagline">Shared ownership. Collective purchasing. Better access.</p>
+                <p class="project-synopsis">
+                  A collaborative ownership and resource-sharing platform designed to help people collectively purchase high-value assets, share equipment, and govern ownership through transparent financial ledgers. Features append-only contribution logs, basis-point equity division, and integer-paise financial precision.
+                </p>
+                <div class="project-tech-pills">
+                  <span class="project-tech-pill">React 19</span>
+                  <span class="project-tech-pill">Vite</span>
+                  <span class="project-tech-pill">Node.js</span>
+                  <span class="project-tech-pill">Express.js</span>
+                  <span class="project-tech-pill">MongoDB</span>
+                  <span class="project-tech-pill">Socket.IO</span>
+                  <span class="project-tech-pill">JWT Rotation</span>
+                  <span class="project-tech-pill">Jest</span>
+                </div>
+                <div class="project-card-actions">
+                  <button class="btn-case-study" data-case-study="ownly">
+                    <span>Inspect Case Study</span>
+                    <span class="arrow-icon">↗</span>
+                  </button>
+                  <a href="https://github.com/Rithvik-bit/Groupby" target="_blank" rel="noopener noreferrer" class="btn-source-link">
+                    <span>GitHub (GroupBuy Repo)</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual-side">
+                <div class="project-preview-frame">
+                  <div class="commerce-ledger-mock" style="width: 100%; height: 100%; background: #0E0F14; padding: 1.5rem; color: #E2E8F0; font-family: var(--font-mono); font-size: 0.78rem; display: flex; flex-direction: column; justify-content: space-around;">
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; color: #94A3B8; font-size: 0.7rem;">
+                      <span>ASSET: SONY FX3 CINEMA KIT</span>
+                      <span style="color: #10B981;">PAID: 100% FUNDED</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <span>Member 01 (Lead)</span>
+                      <span style="color: #38BDF8;">4,000 bp (40.0%)</span>
+                      <span>₹1,44,000.00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <span>Member 02</span>
+                      <span style="color: #38BDF8;">3,500 bp (35.0%)</span>
+                      <span>₹1,26,000.00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                      <span>Member 03</span>
+                      <span style="color: #38BDF8;">2,500 bp (25.0%)</span>
+                      <span>₹90,000.00</span>
+                    </div>
+                    <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 6px; padding: 0.5rem; font-size: 0.72rem; color: #A7F3D0;">
+                      <span>✓ Append-only contribution hash confirmed. Live Socket.IO session.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: CONSENTLENS -->
+          <article class="project-editorial-card double-bezel reveal" id="project-consentlens">
+            <div class="double-bezel-inner project-card-layout">
+              <div class="project-info-side">
+                <span class="project-category-tag">AI / Privacy Intelligence / Full-Stack</span>
+                <h3 class="project-main-title">ConsentLens</h3>
+                <p class="project-tagline">Understand what you're agreeing to.</p>
+                <p class="project-synopsis">
+                  An AI-powered privacy intelligence product designed to analyze dense privacy policies, identify data-broker risks, and translate legal jargon into structured, easy-to-understand risk scores. Combines a Chrome Extension with a Next.js dashboard and FastAPI analytical backend.
+                </p>
+                <div class="project-tech-pills">
+                  <span class="project-tech-pill">Next.js</span>
+                  <span class="project-tech-pill">Chrome Extension (MV3)</span>
+                  <span class="project-tech-pill">FastAPI</span>
+                  <span class="project-tech-pill">Gemini API</span>
+                  <span class="project-tech-pill">DeepSeek R1 Exploration</span>
+                  <span class="project-tech-pill">Pydantic</span>
+                </div>
+                <div class="project-card-actions">
+                  <button class="btn-case-study" data-case-study="consentlens">
+                    <span>Inspect Case Study</span>
+                    <span class="arrow-icon">↗</span>
+                  </button>
+                  <a href="https://github.com/Rithvik-bit" target="_blank" rel="noopener noreferrer" class="btn-source-link">
+                    <span>GitHub Profile</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual-side">
+                <div class="project-preview-frame">
+                  <img src="assets/consentlens.png" alt="ConsentLens Privacy Analysis Interface" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: REDz BT (Bluetooth Audio Router) -->
+          <article class="project-editorial-card double-bezel reveal" id="project-redz-bt">
+            <div class="double-bezel-inner project-card-layout">
+              <div class="project-info-side">
+                <span class="project-category-tag">Desktop Development / Audio Engineering</span>
+                <h3 class="project-main-title">REDz BT</h3>
+                <p class="project-tagline">Dual-Device Bluetooth Audio Router &amp; Sync Utility</p>
+                <p class="project-synopsis">
+                  A standalone Windows desktop utility designed to route master system audio to two Bluetooth listening devices simultaneously. Features independent volume sliders, configurable millisecond delay buffers to counter disparate codec latency, and real-time RMS audio visualizers.
+                </p>
+                <div class="project-tech-pills">
+                  <span class="project-tech-pill">Python 3.11</span>
+                  <span class="project-tech-pill">CustomTkinter</span>
+                  <span class="project-tech-pill">PyAudioWPatch</span>
+                  <span class="project-tech-pill">NumPy</span>
+                  <span class="project-tech-pill">WASAPI Loopback</span>
+                  <span class="project-tech-pill">PyInstaller</span>
+                </div>
+                <div class="project-card-actions">
+                  <button class="btn-case-study" data-case-study="redz-bt">
+                    <span>Inspect Case Study</span>
+                    <span class="arrow-icon">↗</span>
+                  </button>
+                  <a href="https://github.com/Rithvik-bit/-Redz-Bluetooth-Router" target="_blank" rel="noopener noreferrer" class="btn-source-link">
+                    <span>GitHub Repository</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual-side">
+                <div class="project-preview-frame">
+                  <img src="assets/bt.png" alt="REDz Bluetooth Audio Router Desktop Interface" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 05: CAPTIONS AI -->
+          <article class="project-editorial-card double-bezel reveal" id="project-captions-ai">
+            <div class="double-bezel-inner project-card-layout">
+              <div class="project-info-side">
+                <span class="project-category-tag">Creative Technology / In-Browser Media Processing</span>
+                <h3 class="project-main-title">Captions AI</h3>
+                <p class="project-tagline">Browser-Based AI Video Captioning &amp; Subtitle Synthesis</p>
+                <p class="project-synopsis">
+                  A local-first browser video editor connecting Whisper speech recognition, kinetic subtitle animation, and client-side video composition. Employs WebAssembly and FFmpeg.js to render animated captions entirely within the client's browser without cloud server video upload costs.
+                </p>
+                <div class="project-tech-pills">
+                  <span class="project-tech-pill">Whisper (WASM)</span>
+                  <span class="project-tech-pill">FFmpeg.js</span>
+                  <span class="project-tech-pill">WebAssembly</span>
+                  <span class="project-tech-pill">HTML5 Canvas</span>
+                  <span class="project-tech-pill">Web Workers</span>
+                </div>
+                <div class="project-card-actions">
+                  <button class="btn-case-study" data-case-study="captions-ai">
+                    <span>Inspect Case Study</span>
+                    <span class="arrow-icon">↗</span>
+                  </button>
+                  <a href="https://github.com/Rithvik-bit" target="_blank" rel="noopener noreferrer" class="btn-source-link">
+                    <span>GitHub Profile</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual-side">
+                <div class="project-preview-frame">
+                  <img src="assets/captions-ai.png" alt="Captions AI Video Editor Interface" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ====================================================================
+             SECONDARY & WORKSTATION SYSTEMS (Grid View)
+             ==================================================================== -->
+        <div style="margin-top: 5rem;">
+          <div class="section-eyebrow">SYSTEMS, TOOLS &amp; WORKSTATION EXPERIMENTS</div>
+          <h3 class="section-title" style="font-size: 2rem;">Additional Technical Implementations</h3>
+          <p class="section-description">
+            Desktop systems, creative automation agents, interactive frontends, and on-PC projects developed with Antigravity.
+          </p>
+
+          <div class="secondary-projects-grid">
+
+            <!-- PROJECT 06: REDz BRIDGE -->
+            <div class="sub-project-card double-bezel reveal">
+              <div class="double-bezel-inner">
+                <div class="sub-proj-head">
+                  <span class="sub-proj-cat">Desktop Utility / AI</span>
+                  <h4 class="sub-proj-title">REDz Bridge</h4>
+                  <p class="sub-proj-desc">
+                    Electron desktop concept for preserving and transferring useful AI conversation context across ChatGPT, Claude, and Gemini with local-first storage and global hotkey invocation.
+                  </p>
+                </div>
+                <div class="sub-proj-footer">
+                  <span class="badge-source">Electron · Local SQLite</span>
+                  <button class="link-case-small" data-case-study="redz-bridge">Case Study ↗</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 07: COURSE BOT -->
+            <div class="sub-project-card double-bezel reveal">
+              <div class="double-bezel-inner">
+                <div class="sub-proj-head">
+                  <span class="sub-proj-cat">AI Automation / Agents</span>
+                  <h4 class="sub-proj-title">Course Bot</h4>
+                  <p class="sub-proj-desc">
+                    Desktop automation agent designed to interact with AWS learning environments using Gemini Vision and PyAutoGUI, exploring visual UI reasoning and synthetic cursor control.
+                  </p>
+                </div>
+                <div class="sub-proj-footer">
+                  <span class="badge-source">Python · Gemini Vision</span>
+                  <button class="link-case-small" data-case-study="course-bot">Case Study ↗</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 08: VIBE EDITOR -->
+            <div class="sub-project-card double-bezel reveal">
+              <div class="double-bezel-inner">
+                <div class="sub-proj-head">
+                  <span class="sub-proj-cat">Creative Automation</span>
+                  <h4 class="sub-proj-title">Vibe Editor</h4>
+                  <p class="sub-proj-desc">
+                    Experimental AI video-editing agent translating natural language commands into executable Adobe After Effects ExtendScript operations and timeline keyframes.
+                  </p>
+                </div>
+                <div class="sub-proj-footer">
+                  <span class="badge-source">Python · ExtendScript</span>
+                  <button class="link-case-small" data-case-study="vibe-editor">Case Study ↗</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 09: CARSPEC -->
+            <div class="sub-project-card double-bezel reveal">
+              <div class="double-bezel-inner">
+                <div class="sub-proj-head">
+                  <span class="sub-proj-cat">Frontend / UI Engineering</span>
+                  <h4 class="sub-proj-title">CarSpec</h4>
+                  <p class="sub-proj-desc">
+                    Automotive discovery and comparison portal featuring 80+ vehicle entries, multi-attribute filtering, side-by-side comparison, loan EMI calculator, and GSAP animations.
+                  </p>
+                </div>
+                <div class="sub-proj-footer">
+                  <span class="badge-source">Vanilla JS · GSAP</span>
+                  <button class="link-case-small" data-case-study="carspec">Case Study ↗</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANTIGRAVITY PROJECT: IRIS / IN-PC AGENT REDz -->
+            <div class="sub-project-card double-bezel reveal">
+              <div class="double-bezel-inner">
+                <div class="sub-proj-head">
+                  <span class="sub-proj-cat">Antigravity On-PC / Local Agent</span>
+                  <h4 class="sub-proj-title">Iris (In-PC Agent)</h4>
+                  <p class="sub-proj-desc">
+                    Local autonomous desktop assistant and system orchestrator developed on PC with Antigravity. Explores workspace diagnostics, process monitoring, and local agentic loops.
+                  </p>
+                </div>
+                <div class="sub-proj-footer">
+                  <span class="badge-source">Antigravity · PowerShell</span>
+                  <button class="link-case-small" data-case-study="iris-agent">Case Study ↗</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANTIGRAVITY PROJECT: AIRDRAW -->
+            <div class="sub-project-card double-bezel reveal">
+              <div class="double-bezel-inner">
+                <div class="sub-proj-head">
+                  <span class="sub-proj-cat">Computer Vision</span>
+                  <h4 class="sub-proj-title">AirDraw</h4>
+                  <p class="sub-proj-desc">
+                    Contactless webcam computer vision interface converting hand gestures into digital strokes on a virtual canvas using OpenCV and MediaPipe landmark tracking.
+                  </p>
+                </div>
+                <div class="sub-proj-footer">
+                  <span class="badge-source">Python · MediaPipe</span>
+                  <button class="link-case-small" data-case-study="airdraw">Case Study ↗</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANTIGRAVITY PROJECT: SNAP-VANISH -->
+            <div class="sub-project-card double-bezel reveal">
+              <div class="double-bezel-inner">
+                <div class="sub-proj-head">
+                  <span class="sub-proj-cat">Privacy Intelligence</span>
+                  <h4 class="sub-proj-title">Snap-Vanish</h4>
+                  <p class="sub-proj-desc">
+                    Local on-device utility for stripping EXIF telemetry, embedded GPS tags, and device fingerprints from photos and video files before social media publication.
+                  </p>
+                </div>
+                <div class="sub-proj-footer">
+                  <span class="badge-source">Python · Binary Parsing</span>
+                  <button class="link-case-small" data-case-study="snap-vanish">Case Study ↗</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         05 — TECHNICAL SKILLS & CAPABILITIES
+         ====================================================================== -->
+    <section id="skills" class="section-spacer section-tinted">
+      <div class="container">
+        <div class="section-eyebrow">SYSTEMS &amp; TOOLING INVENTORY</div>
+        <h2 class="section-title">Technical Capabilities</h2>
+        <p class="section-description">
+          A disciplined, categorized breakdown of technologies and engineering disciplines. Categorized by operational depth: project-proven architectures, academic fundamentals, and active research.
+        </p>
+
+        <!-- Filter navigation buttons -->
+        <div class="skills-filter-nav">
+          <button class="skills-filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="skills-filter-btn" data-filter="engineering">Engineering &amp; AI</button>
+          <button class="skills-filter-btn" data-filter="fullstack">Full-Stack &amp; Data</button>
+          <button class="skills-filter-btn" data-filter="creative">Creative &amp; Media</button>
+        </div>
+
+        <!-- Rendered via JS -->
+        <div id="skills-grid-container" class="skills-grid-wrapper"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         06 — SECOND MAJOR PILLAR: REDz (Creative Post-Production & Content Partner)
+         ====================================================================== -->
+    <section id="creative" class="section-spacer redz-pillar-section" aria-label="REDz Creative Business Pillar">
+      <!-- Anchor alias for #ventures to ensure all existing links resolve smoothly -->
+      <div id="ventures" class="anchor-alias"></div>
+
+      <div class="container">
+
+        <!-- SUBSECTION 1: HERO & EMBLEM LOCKUP -->
+        <div class="redz-hero-block reveal">
+          <div class="redz-hero-header">
+            <div class="redz-eyebrow-badge">
+              <span class="redz-eyebrow-dot"></span>
+              <span>02 / CREATIVE BUSINESS</span>
+            </div>
+            <div class="redz-brand-tagline">CREATE. EDIT. IMPACT.</div>
+          </div>
+
+          <div class="redz-hero-grid">
+            <div class="redz-hero-text-col">
+              <h2 class="redz-hero-title">
+                Turning raw footage into content that makes an impact.
+              </h2>
+              <p class="redz-hero-lead">
+                REDz is my creative post-production and content business, helping brands, creators and agencies transform raw footage into compelling digital content through commercial editing, podcast clipping, creative production and scalable post-production workflows.
+              </p>
+              <div class="redz-founder-badge">
+                <span class="founder-icon">▪</span>
+                <span>Founded and led by Sasi Rithvik.</span>
+              </div>
+              <div class="redz-hero-ctas">
+                <a href="#redz-client-work" class="btn-primary star-border">
+                  <span>Explore REDz Work</span>
+                  <span class="btn-arrow-bubble">↓</span>
+                </a>
+                <a href="#contact" class="btn-secondary" style="border-color: rgba(255, 255, 255, 0.2); color: #FFFFFF;">
+                  <span>Discuss a Project</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="redz-hero-visual-col">
+              <div class="redz-emblem-card double-bezel double-bezel-dark">
+                <div class="double-bezel-inner">
+                  <div class="redz-logo-showcase">
+                    <img src="assets/redz-media-logo.png" alt="REDz — Create. Edit. Impact." class="redz-official-logo" />
+                  </div>
+                  <div class="redz-spec-strip">
+                    <div class="redz-spec-cell">
+                      <span class="spec-label">Category</span>
+                      <span class="spec-val">Post-Production</span>
+                    </div>
+                    <div class="redz-spec-cell">
+                      <span class="spec-label">Leadership</span>
+                      <span class="spec-val">Sasi Rithvik</span>
+                    </div>
+                    <div class="redz-spec-cell">
+                      <span class="spec-label">Tagline</span>
+                      <span class="spec-val redz-accent">CREATE · EDIT · IMPACT</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive TechText Canvas Blueprint Wordmark for REDz -->
+          <div id="tech-text-container" class="tech-text" style="margin-top: 2.5rem; height: 180px;">
+            <span class="tech-text-hint">Interactive Blueprint · Click or Drag Letters</span>
+          </div>
+        </div>
+
+        <!-- SUBSECTION 2: ABOUT REDz & PHILOSOPHY -->
+        <div class="redz-about-deck reveal" style="margin-top: 4.5rem;">
+          <div class="redz-about-card double-bezel double-bezel-dark">
+            <div class="double-bezel-inner">
+              <div class="redz-about-split">
+                <div class="about-left">
+                  <span class="sub-label">THE REDZ EVOLUTION</span>
+                  <h3 class="about-heading">
+                    Built from the timeline up.<br />
+                    Engineered for consistent execution.
+                  </h3>
+                </div>
+                <div class="about-right">
+                  <p class="about-p">
+                    REDz started with video editing and evolved into a creative post-production business built around helping brands maintain consistent, professional content.
+                  </p>
+                  <p class="about-p">
+                    From commercial reels and podcast highlights to promotional creatives and agency editing support, REDz focuses on the final stage that turns raw production into compelling digital communication.
+                  </p>
+                  <div class="redz-philosophy-quote">
+                    <strong>Our philosophy:</strong> Great content deserves great execution.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIQUID GLASS SEGMENTED NAVIGATOR HUB -->
+        <div class="redz-navigator-hub reveal">
+          <div class="redz-view-controls">
+            <div class="redz-segmented-switch" role="tablist" aria-label="REDz Section Navigator">
+              <button class="redz-tab-btn active" role="tab" aria-selected="true" data-tab="tab-services" id="btn-tab-services">
+                <span class="tab-index">01</span>
+                <span class="tab-name">Services</span>
+                <span class="tab-badge">5</span>
+              </button>
+              <button class="redz-tab-btn" role="tab" aria-selected="false" data-tab="tab-clients" id="btn-tab-clients">
+                <span class="tab-index">02</span>
+                <span class="tab-name">Client Work</span>
+                <span class="tab-badge">6</span>
+              </button>
+              <button class="redz-tab-btn" role="tab" aria-selected="false" data-tab="tab-models" id="btn-tab-models">
+                <span class="tab-index">03</span>
+                <span class="tab-name">How It Works</span>
+              </button>
+              <button class="redz-tab-btn" role="tab" aria-selected="false" data-tab="tab-operations" id="btn-tab-operations">
+                <span class="tab-index">04</span>
+                <span class="tab-name">Founder &amp; Toolkit</span>
+              </button>
+            </div>
+
+            <button id="redz-toggle-all-btn" class="btn-toggle-all" aria-pressed="false" type="button" title="Toggle between single tabbed view and full expanded page">
+              <span class="toggle-all-icon">⤢</span>
+              <span class="toggle-all-text">Expand All Details</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB CONTENT CONTAINER -->
+        <div id="redz-tab-content-container" class="redz-tab-content-container">
+
+          <!-- TAB PANEL 1: SERVICES (5 DISCIPLINES) -->
+          <div id="tab-services" class="redz-tab-panel active" role="tabpanel" aria-labelledby="btn-tab-services">
+            <div class="redz-services-section">
+              <div class="section-header-compact">
+                <span class="sub-label">WHAT REDz DELIVERS</span>
+                <h3 class="pillar-sub-title">Core Service Disciplines</h3>
+                <p class="pillar-sub-desc">
+                  Five structured post-production workflows designed for brands seeking audience engagement and agencies seeking reliable capacity.
+                </p>
+              </div>
+
+              <div class="redz-services-grid">
+                <!-- 01: Commercial Video Editing -->
+                <div class="service-editorial-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="service-num">01</div>
+                    <h4 class="service-title">Commercial Video Editing</h4>
+                    <p class="service-summary">End-to-end commercial cuts tailored for maximum audience retention and high conversion across digital channels.</p>
+                    <button class="btn-service-accordion" aria-expanded="false" type="button">
+                      <span class="btn-accordion-label">View Deliverables</span>
+                      <span class="btn-accordion-arrow">▾</span>
+                    </button>
+                    <ul class="service-bullets collapsed">
+                      <li>Brand and promotional reels</li>
+                      <li>Product showcase videos</li>
+                      <li>Cinematic commercial edits</li>
+                      <li>Retail and business promotions</li>
+                      <li>Colour grading and sound design</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 02: Podcast & Short-form Clipping -->
+                <div class="service-editorial-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="service-num">02</div>
+                    <h4 class="service-title">Podcast &amp; Short-form Clipping</h4>
+                    <p class="service-summary">Converting long-form conversations into high-impact vertical micro-content for social distribution.</p>
+                    <button class="btn-service-accordion" aria-expanded="false" type="button">
+                      <span class="btn-accordion-label">View Deliverables</span>
+                      <span class="btn-accordion-arrow">▾</span>
+                    </button>
+                    <ul class="service-bullets collapsed">
+                      <li>Long-form to short-form conversion</li>
+                      <li>Podcast highlights &amp; hooks</li>
+                      <li>Interview and talking-head clips</li>
+                      <li>Subtitle and caption integration</li>
+                      <li>Social-first storytelling</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 03: Creative & Promotional Design -->
+                <div class="service-editorial-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="service-num">03</div>
+                    <h4 class="service-title">Creative &amp; Promotional Design</h4>
+                    <p class="service-summary">High-impact static and motion design assets supporting video rollouts and digital marketing campaigns.</p>
+                    <button class="btn-service-accordion" aria-expanded="false" type="button">
+                      <span class="btn-accordion-label">View Deliverables</span>
+                      <span class="btn-accordion-arrow">▾</span>
+                    </button>
+                    <ul class="service-bullets collapsed">
+                      <li>AI-assisted promotional creatives</li>
+                      <li>Social media posters &amp; thumbnails</li>
+                      <li>Campaign visuals &amp; lockups</li>
+                      <li>Brand-focused promotional graphics</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 04: Production Collaboration -->
+                <div class="service-editorial-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="service-num">04</div>
+                    <h4 class="service-title">Production Collaboration</h4>
+                    <p class="service-summary">Synchronized technical handover bridging on-ground filming crews with rigorous post-production pipelines.</p>
+                    <button class="btn-service-accordion" aria-expanded="false" type="button">
+                      <span class="btn-accordion-label">View Deliverables</span>
+                      <span class="btn-accordion-arrow">▾</span>
+                    </button>
+                    <ul class="service-bullets collapsed">
+                      <li>Collaboration with shooting teams</li>
+                      <li>Production-to-post-production workflows</li>
+                      <li>Commercial content projects</li>
+                      <li>Coordinated creative delivery</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 05: Agency & White-label Partnerships -->
+                <div class="service-editorial-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="service-num">05</div>
+                    <h4 class="service-title">Agency &amp; White-label Partnerships</h4>
+                    <p class="service-summary">Dedicated, transparent backend editing bandwidth designed to scale agency client deliverables without overhead.</p>
+                    <button class="btn-service-accordion" aria-expanded="false" type="button">
+                      <span class="btn-accordion-label">View Deliverables</span>
+                      <span class="btn-accordion-arrow">▾</span>
+                    </button>
+                    <ul class="service-bullets collapsed">
+                      <li>Backend editing support</li>
+                      <li>White-label post-production</li>
+                      <li>Recurring content packages</li>
+                      <li>Flexible project-based collaboration</li>
+                      <li>Editing capacity for agency workflows</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB PANEL 2: CLIENT WORK (6 CASE STUDIES) -->
+          <div id="tab-clients" class="redz-tab-panel" role="tabpanel" aria-labelledby="btn-tab-clients">
+            <div id="redz-client-work" class="redz-clients-section">
+              <div class="section-header-compact">
+                <span class="sub-label">DOCUMENTED CLIENT DELIVERABLES</span>
+                <h3 class="pillar-sub-title">Selected Client Work</h3>
+                <p class="pillar-sub-desc">
+                  Verified delivery case studies reflecting real client deliverables, commercial relationships, and disciplined post-production execution.
+                </p>
+              </div>
+
+              <div class="redz-case-studies-grid">
+                <!-- CLIENT 01: MITRA MEDICARE HOSPITALS -->
+                <div class="client-case-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="client-badge-row">
+                      <span class="industry-tag">Healthcare</span>
+                      <span class="client-tag">Verified Delivery</span>
+                    </div>
+                    <h4 class="client-name">Mitra Medicare Hospitals</h4>
+                    <div class="client-scope-pills">
+                      <span>Podcast Clipping</span>
+                      <span>Short-form Video Editing</span>
+                      <span>Healthcare Content</span>
+                    </div>
+                    <div class="metric-highlight-box">
+                      <div class="metric-primary">30+</div>
+                      <div class="metric-desc">Podcast clips delivered</div>
+                      <div class="metric-sub-detail">
+                        • 17 Mitra reels recorded in September 2026<br />
+                        • September reel billing records: ₹5,950
+                      </div>
+                    </div>
+                    <p class="client-narrative">
+                      Structured patient education clipping pipeline extracting specialist insights into high-retention vertical reels with active speaker framing and medical captioning.
+                    </p>
+                    <div class="client-card-actions">
+                      <button class="btn-creative-detail" data-creative-id="mitra-medicare">
+                        <span>Inspect Full Case Study</span>
+                        <span>↗</span>
+                      </button>
+                      <button class="btn-quick-expand" aria-expanded="false" type="button">
+                        <span>Quick Breakdown</span>
+                        <span class="chevron">▾</span>
+                      </button>
+                    </div>
+                    <div class="client-quick-breakdown collapsed">
+                      <div class="breakdown-item"><strong>Deliverables:</strong> 30+ podcast clips &amp; 17 recorded reels</div>
+                      <div class="breakdown-item"><strong>Production:</strong> Active speaker tracking, audio cleaning &amp; medical subtitles</div>
+                      <div class="breakdown-item"><strong>Verification:</strong> Documented ₹5,950 billing records (Sept 2026)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CLIENT 02: BRANDNEST DIGITAL MARKETING -->
+                <div class="client-case-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="client-badge-row">
+                      <span class="industry-tag">Digital Marketing</span>
+                      <span class="client-tag">Ongoing Partnership</span>
+                    </div>
+                    <h4 class="client-name">BrandNest Digital Marketing</h4>
+                    <div class="client-scope-pills">
+                      <span>Reel Editing</span>
+                      <span>Podcast Clips</span>
+                      <span>Commercial Post-Production</span>
+                    </div>
+                    <div class="metric-highlight-box">
+                      <div class="metric-primary">Recurring</div>
+                      <div class="metric-desc">Content delivery pipeline</div>
+                      <div class="metric-sub-detail">
+                        • Multi-brand commercial reel post-production<br />
+                        • Scalable agency turnaround under active collaboration
+                      </div>
+                    </div>
+                    <p class="client-narrative">
+                      Ongoing professional partnership providing backend editing capacity, rapid turnaround, and modular vertical video frameworks across agency accounts.
+                    </p>
+                    <div class="client-card-actions">
+                      <button class="btn-creative-detail" data-creative-id="brandnest-marketing">
+                        <span>Inspect Full Case Study</span>
+                        <span>↗</span>
+                      </button>
+                      <button class="btn-quick-expand" aria-expanded="false" type="button">
+                        <span>Quick Breakdown</span>
+                        <span class="chevron">▾</span>
+                      </button>
+                    </div>
+                    <div class="client-quick-breakdown collapsed">
+                      <div class="breakdown-item"><strong>Deliverables:</strong> Commercial reels &amp; podcast highlights across agency clients</div>
+                      <div class="breakdown-item"><strong>Production:</strong> White-label post-production with guaranteed turnaround</div>
+                      <div class="breakdown-item"><strong>Relationship:</strong> Ongoing recurring editing support pipeline</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CLIENT 03: JAEYUNMI9 UNISEX SALON -->
+                <div class="client-case-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="client-badge-row">
+                      <span class="industry-tag">Beauty &amp; Personal Care</span>
+                      <span class="client-tag">Kakinada, AP</span>
+                    </div>
+                    <h4 class="client-name">Jaeyunmi9 Unisex Salon</h4>
+                    <div class="client-scope-pills">
+                      <span>Monthly Content Package</span>
+                      <span>12 Reels Suite</span>
+                      <span>Promotional Posters</span>
+                    </div>
+                    <div class="metric-highlight-box">
+                      <div class="metric-primary">12 Reels</div>
+                      <div class="metric-desc">+ 4 complimentary posters</div>
+                      <div class="metric-sub-detail">
+                        • Initial monthly package: ₹5,000<br />
+                        • Scripting direction, trend adaptation &amp; color enhancement
+                      </div>
+                    </div>
+                    <p class="client-narrative">
+                      Client acquisition and content delivery package featuring haircut transformation edits, macro styling textures, and localized lifestyle hooks.
+                    </p>
+                    <div class="client-card-actions">
+                      <button class="btn-creative-detail" data-creative-id="jaeyunmi9-salon">
+                        <span>Inspect Full Case Study</span>
+                        <span>↗</span>
+                      </button>
+                      <button class="btn-quick-expand" aria-expanded="false" type="button">
+                        <span>Quick Breakdown</span>
+                        <span class="chevron">▾</span>
+                      </button>
+                    </div>
+                    <div class="client-quick-breakdown collapsed">
+                      <div class="breakdown-item"><strong>Deliverables:</strong> 12 Reels monthly package + 4 complimentary posters</div>
+                      <div class="breakdown-item"><strong>Production:</strong> Haircut transformations, macro textures &amp; color enhancement</div>
+                      <div class="breakdown-item"><strong>Verification:</strong> Initial monthly contract of ₹5,000 (Kakinada, AP)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Additional Verified Client Work Strip -->
+              <div class="additional-client-deck" style="margin-top: 2rem;">
+                <div class="additional-title">Additional Documented Commercial Work:</div>
+                <div class="additional-cards-grid">
+                  <div class="sub-case-card double-bezel double-bezel-dark">
+                    <div class="double-bezel-inner">
+                      <div class="sub-case-header">
+                        <span class="c-tag">Retail Campaign</span>
+                        <h5>Mobile Mania</h5>
+                      </div>
+                      <p>Smartphone sale completed within 24 hours of first reel publication. Telugu-English retail hooks.</p>
+                      <button class="btn-sub-detail" data-creative-id="mobile-mania">View Details ↗</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-case-card double-bezel double-bezel-dark">
+                    <div class="double-bezel-inner">
+                      <div class="sub-case-header">
+                        <span class="c-tag">Clean Mobility</span>
+                        <h5>Smart EV Zone</h5>
+                      </div>
+                      <p>Rolling vehicle gimbal tracking, battery economics, and synthesized electric acceleration audio.</p>
+                      <button class="btn-sub-detail" data-creative-id="smart-ev-zone">View Details ↗</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-case-card double-bezel double-bezel-dark">
+                    <div class="double-bezel-inner">
+                      <div class="sub-case-header">
+                        <span class="c-tag">Luxury Jewellery</span>
+                        <h5>Srikar Jewellers</h5>
+                      </div>
+                      <p>Intricate gold filigree macro cinematography with warm festive amber lighting choreography.</p>
+                      <button class="btn-sub-detail" data-creative-id="srikar-jewellers">View Details ↗</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB PANEL 3: HOW REDz WORKS (TWO-COLUMN BUSINESS MODEL) -->
+          <div id="tab-models" class="redz-tab-panel" role="tabpanel" aria-labelledby="btn-tab-models">
+            <div class="redz-business-models">
+              <div class="section-header-compact">
+                <span class="sub-label">COLLABORATION ARCHITECTURE</span>
+                <h3 class="pillar-sub-title">How REDz Works</h3>
+                <p class="pillar-sub-desc">
+                  Two clear engagement channels structured for direct enterprise clients and creative marketing agencies.
+                </p>
+              </div>
+
+              <div class="models-two-col">
+                <!-- Model A -->
+                <div class="model-box double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="model-badge">MODEL A</div>
+                    <h4 class="model-title">Direct Brand Partnerships</h4>
+                    <div class="model-flow-diagram">
+                      <span class="flow-node">Brand / Business</span>
+                      <span class="flow-arrow">→</span>
+                      <span class="flow-node redz-node">REDz</span>
+                    </div>
+                    <ul class="model-points">
+                      <li>Direct client relationships and discovery consultations</li>
+                      <li>Recurring monthly vertical content packages</li>
+                      <li>Project-based commercial reel editing</li>
+                      <li>Creative planning and scripting direction</li>
+                      <li>Guaranteed turnaround and revision cycles</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Model B -->
+                <div class="model-box double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="model-badge">MODEL B</div>
+                    <h4 class="model-title">Agency / White-label Partnerships</h4>
+                    <div class="model-flow-diagram">
+                      <span class="flow-node">Agency</span>
+                      <span class="flow-sub">Client &amp; Strategy</span>
+                      <span class="flow-arrow">⇄</span>
+                      <span class="flow-node redz-node">REDz</span>
+                      <span class="flow-sub">Backend Post-Production</span>
+                    </div>
+                    <ul class="model-points">
+                      <li>White-label post-production under agency branding</li>
+                      <li>Reliable recurring editing support across accounts</li>
+                      <li>Scalable production workflows handling volume spikes</li>
+                      <li>Flexible project-based and retainer capacity</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Feature statement banner -->
+              <div class="redz-quote-banner double-bezel double-bezel-dark" style="margin-top: 2rem;">
+                <div class="double-bezel-inner" style="text-align: center; padding: 2.25rem 2rem;">
+                  <p class="featured-statement">
+                    “You keep the client. We support the production.”
+                  </p>
+                  <span class="statement-sub">Transparent, disciplined post-production execution for agencies and growth teams.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB PANEL 4: FOUNDER, HIGHLIGHTS, TOOLKIT & VISUAL PORTFOLIO -->
+          <div id="tab-operations" class="redz-tab-panel" role="tabpanel" aria-labelledby="btn-tab-operations">
+            <!-- SUBSECTION 6: MY ROLE — FOUNDER & CREATIVE LEAD -->
+            <div class="redz-founder-role">
+              <div class="role-card-deck double-bezel double-bezel-dark">
+                <div class="double-bezel-inner">
+                  <div class="role-header-split">
+                    <div>
+                      <span class="sub-label">ENTREPRENEURIAL LEADERSHIP</span>
+                      <h3 class="role-heading">Building REDz beyond the timeline.</h3>
+                    </div>
+                    <div class="role-founder-title">
+                      <span class="rf-name">Sasi Rithvik</span>
+                      <span class="rf-title">Founder &amp; Creative Lead</span>
+                    </div>
+                  </div>
+
+                  <p class="role-desc">
+                    As the founder of REDz, I manage the business across creative execution, client relationships and operational development.
+                  </p>
+
+                  <div class="responsibilities-label">Operational &amp; Creative Responsibilities:</div>
+                  <div class="responsibilities-grid">
+                    <div class="resp-chip">▪ Brand positioning and identity</div>
+                    <div class="resp-chip">▪ Client acquisition and prospect research</div>
+                    <div class="resp-chip">▪ Client discovery and requirements</div>
+                    <div class="resp-chip">▪ Proposal and quotation preparation</div>
+                    <div class="resp-chip">▪ Service packages and pricing</div>
+                    <div class="resp-chip">▪ Content planning and scheduling</div>
+                    <div class="resp-chip">▪ Editing workflows and revisions</div>
+                    <div class="resp-chip">▪ Client communication</div>
+                    <div class="resp-chip">▪ Delivery coordination</div>
+                    <div class="resp-chip">▪ Payment tracking</div>
+                    <div class="resp-chip">▪ Production &amp; agency collaboration discussions</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBSECTION 7: VERIFIED BUSINESS HIGHLIGHTS -->
+            <div class="redz-highlights" style="margin-top: 4rem;">
+              <div class="section-header-compact">
+                <span class="sub-label">DOCUMENTED METRICS</span>
+                <h3 class="pillar-sub-title">Verified Business Highlights</h3>
+                <p class="pillar-sub-desc">
+                  Restrained, operational figures documenting real project deliverables and organizational footprint.
+                </p>
+              </div>
+
+              <div class="highlights-grid">
+                <div class="highlight-item double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="hl-number">30+</div>
+                    <div class="hl-label">Podcast clips delivered</div>
+                    <p class="hl-note">Specialist healthcare &amp; conversational video snippets</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="hl-number">17</div>
+                    <div class="hl-label">Mitra Medicare reels</div>
+                    <p class="hl-note">Recorded in September 2026 delivery window</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="hl-number">3</div>
+                    <div class="hl-label">Core service pillars</div>
+                    <p class="hl-note">Editing, creative production and agency support</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <div class="hl-number">2</div>
+                    <div class="hl-label">Business channels</div>
+                    <p class="hl-note">Direct brands and agency partnerships</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBSECTION 8: CREATIVE TOOLKIT -->
+            <div class="redz-toolkit" style="margin-top: 4rem;">
+              <div class="section-header-compact">
+                <span class="sub-label">SYSTEMS &amp; SOFTWARE</span>
+                <h3 class="pillar-sub-title">Creative &amp; Operational Toolkit</h3>
+                <p class="pillar-sub-desc">
+                  Disciplined software stack powering rapid post-production turnarounds, social-ready formats, and client operations.
+                </p>
+              </div>
+
+              <div class="toolkit-cards-deck">
+                <div class="toolkit-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="tk-discipline">Video Editing</span>
+                    <div class="tk-tools-list">
+                      <span class="tk-pill">CapCut</span>
+                      <span class="tk-pill">Adobe Premiere Pro</span>
+                    </div>
+                    <p class="tk-desc">Precision timeline cutting, multi-cam sync, kinetic captioning, and dynamic pacing.</p>
+                  </div>
+                </div>
+
+                <div class="toolkit-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="tk-discipline">Motion Graphics</span>
+                    <div class="tk-tools-list">
+                      <span class="tk-pill">Adobe After Effects</span>
+                    </div>
+                    <p class="tk-desc">Custom title cards, logo animations, animated callouts, and tracking graphics.</p>
+                  </div>
+                </div>
+
+                <div class="toolkit-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="tk-discipline">Image Design</span>
+                    <div class="tk-tools-list">
+                      <span class="tk-pill">Adobe Photoshop</span>
+                    </div>
+                    <p class="tk-desc">High-contrast promotional posters, social media banners, and asset preparation.</p>
+                  </div>
+                </div>
+
+                <div class="toolkit-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="tk-discipline">Creative Production</span>
+                    <div class="tk-tools-list">
+                      <span class="tk-pill">AI-assisted Workflows</span>
+                    </div>
+                    <p class="tk-desc">AI-assisted image generation, prompt design, and conceptual storyboard ideation.</p>
+                  </div>
+                </div>
+
+                <div class="toolkit-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="tk-discipline">Delivery Architecture</span>
+                    <div class="tk-tools-list">
+                      <span class="tk-pill">Social-Ready Exports</span>
+                    </div>
+                    <p class="tk-desc">Bitrate-optimized 9:16 vertical and 16:9 master deliverables with multi-platform QA.</p>
+                  </div>
+                </div>
+
+                <div class="toolkit-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="tk-discipline">Business Operations</span>
+                    <div class="tk-tools-list">
+                      <span class="tk-pill">Proposals &amp; Invoices</span>
+                      <span class="tk-pill">Content Calendars</span>
+                    </div>
+                    <p class="tk-desc">Client onboarding, quotation models, milestone reviews, and payment records.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUBSECTION 9 & 10: VISUAL PORTFOLIO & PREVIEW SHOWCASE -->
+            <div class="redz-visual-portfolio" style="margin-top: 4rem;">
+              <div class="section-header-compact">
+                <span class="sub-label">VISUAL SHOWCASE</span>
+                <h3 class="pillar-sub-title">Visual Portfolio &amp; Deliverables</h3>
+                <p class="pillar-sub-desc">
+                  Curated preview across commercial edits, podcast clips, product promotions, healthcare educational content, and promotional creatives.
+                </p>
+              </div>
+
+              <div class="portfolio-categories-grid">
+                <div class="p-category-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="p-cat-tag">Healthcare &amp; Education</span>
+                    <h4>Mitra Medicare Podcast Series</h4>
+                    <p>Specialist medical insights converted into patient-friendly vertical highlights with dynamic captions.</p>
+                    <div class="p-meta-strip">
+                      <span>Role: Lead Post-Production Editor</span>
+                      <span>Software: CapCut · Premiere Pro</span>
+                    </div>
+                    <button class="btn-sub-detail" data-creative-id="mitra-medicare">Inspect Project Details ↗</button>
+                  </div>
+                </div>
+
+                <div class="p-category-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="p-cat-tag">Agency Commercial Suite</span>
+                    <h4>BrandNest Client Deliverables</h4>
+                    <p>High-volume commercial reel editing and podcast clipping supporting agency client campaigns.</p>
+                    <div class="p-meta-strip">
+                      <span>Role: Post-Production Partner</span>
+                      <span>Software: Premiere Pro · After Effects</span>
+                    </div>
+                    <button class="btn-sub-detail" data-creative-id="brandnest-marketing">Inspect Project Details ↗</button>
+                  </div>
+                </div>
+
+                <div class="p-category-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="p-cat-tag">Beauty &amp; Grooming</span>
+                    <h4>Jaeyunmi9 Unisex Salon Campaign</h4>
+                    <p>12-reel styling package with before/after transitions and 4 promotional campaign posters.</p>
+                    <div class="p-meta-strip">
+                      <span>Role: Founder &amp; Creative Lead</span>
+                      <span>Software: Premiere Pro · Photoshop</span>
+                    </div>
+                    <button class="btn-sub-detail" data-creative-id="jaeyunmi9-salon">Inspect Project Details ↗</button>
+                  </div>
+                </div>
+
+                <div class="p-category-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="p-cat-tag">Retail Conversion</span>
+                    <h4>Mobile Mania Device Promotions</h4>
+                    <p>Fast-paced smartphone commercials with Telugu-English hooks generating documented 24-hour conversions.</p>
+                    <div class="p-meta-strip">
+                      <span>Role: Creative Director &amp; Editor</span>
+                      <span>Software: Premiere Pro · After Effects</span>
+                    </div>
+                    <button class="btn-sub-detail" data-creative-id="mobile-mania">Inspect Project Details ↗</button>
+                  </div>
+                </div>
+
+                <div class="p-category-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="p-cat-tag">Clean Automotive</span>
+                    <h4>Smart EV Zone Showroom Reels</h4>
+                    <p>Gimbal vehicle tracking, battery economics, and synthesized whisper-quiet electric audio.</p>
+                    <div class="p-meta-strip">
+                      <span>Role: Cinematographer &amp; Editor</span>
+                      <span>Software: Premiere Pro · After Effects</span>
+                    </div>
+                    <button class="btn-sub-detail" data-creative-id="smart-ev-zone">Inspect Project Details ↗</button>
+                  </div>
+                </div>
+
+                <div class="p-category-card double-bezel double-bezel-dark">
+                  <div class="double-bezel-inner">
+                    <span class="p-cat-tag">Luxury &amp; Jewellery</span>
+                    <h4>Srikar Jewellers Bridal Filigree</h4>
+                    <p>Macro close-ups on gold filigree, warm festive illumination, and traditional ambient scoring.</p>
+                    <div class="p-meta-strip">
+                      <span>Role: Cinematographer &amp; Colorist</span>
+                      <span>Software: Premiere Pro · Photoshop</span>
+                    </div>
+                    <button class="btn-sub-detail" data-creative-id="srikar-jewellers">Inspect Project Details ↗</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SUBSECTION 11: FINAL REDz CALL TO ACTION -->
+        <div class="redz-cta-banner reveal" style="margin-top: 5rem;">
+          <div class="double-bezel double-bezel-dark">
+            <div class="double-bezel-inner" style="padding: 3.5rem 2.5rem; text-align: center;">
+              <div class="cta-eyebrow" style="color: #FF3B47; font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.75rem;">
+                POST-PRODUCTION COLLABORATION
+              </div>
+              <h3 class="cta-heading" style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 700; color: #FFFFFF; line-height: 1.2; margin-bottom: 1.25rem;">
+                Have footage? Let's make something out of it.
+              </h3>
+              <p class="cta-desc" style="max-width: 620px; margin: 0 auto 2.25rem auto; font-size: 1.05rem; color: #A0A0B0; line-height: 1.6;">
+                Whether you're a growing brand, creator or agency looking for reliable post-production support, REDz is ready to collaborate.
+              </p>
+              <div class="cta-buttons-row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                <a href="#contact" class="btn-primary star-border">
+                  <span>Start a Project</span>
+                  <span class="btn-arrow-bubble">↗</span>
+                </a>
+                <a href="mailto:sasirithvik92@gmail.com?subject=[REDz%20Inquiry]%20Post-Production%20Collaboration" class="btn-secondary" style="border-color: rgba(255, 255, 255, 0.2); color: #FFFFFF;">
+                  <span>Contact REDz</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         08 & 09 — EDUCATION, ACHIEVEMENTS & INNOVATION
+         ======================================================================== -->
+    <section id="credentials" class="section-spacer section-tinted">
+      <div class="container">
+        <div class="section-eyebrow">ACADEMIC &amp; COMPETITIVE FOUNDATIONS</div>
+        <h2 class="section-title">Education &amp; Achievements</h2>
+        <p class="section-description">
+          Verified academic credentials, AWS Academy certifications, and hackathon initiatives.
+        </p>
+
+        <div class="credentials-grid" style="margin-top: 3.5rem;">
+          <!-- Left: Certifications & Academic Degree -->
+          <div class="cred-card double-bezel reveal">
+            <div class="double-bezel-inner">
+              <h3 class="cred-heading">Education &amp; AWS Certifications</h3>
+              
+              <div style="padding-bottom: 1.25rem; border-bottom: 1px solid var(--border-inner); margin-bottom: 1rem;">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-red); text-transform: uppercase;">Undergraduate Degree</span>
+                <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; margin-top: 0.25rem;">B.Tech in Computer Science and Engineering</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">SRKR Engineering College · Class of 2026 (Third-Year Student)</p>
+              </div>
+
+              <div class="cert-item">
+                <div>
+                  <div class="cert-title">AWS Academy Machine Learning Foundations</div>
+                  <div style="font-size: 0.8rem; color: var(--text-secondary);">Supervised learning, model evaluation, AWS SageMaker</div>
+                </div>
+                <div class="cert-hours">20 Hours</div>
+              </div>
+
+              <div class="cert-item">
+                <div>
+                  <div class="cert-title">AWS Academy Machine Learning for NLP</div>
+                  <div style="font-size: 0.8rem; color: var(--text-secondary);">Text tokenization, sentiment analysis, sequence modeling</div>
+                </div>
+                <div class="cert-hours">20 Hours</div>
+              </div>
+
+              <div class="cert-item">
+                <div>
+                  <div class="cert-title">AWS Academy Generative AI Foundations</div>
+                  <div style="font-size: 0.8rem; color: var(--text-secondary);">Transformer architectures, prompt engineering, diffusion models</div>
+                </div>
+                <div class="cert-hours">12 Hours</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Hackathons & Open-Source Programs -->
+          <div class="cred-card double-bezel reveal">
+            <div class="double-bezel-inner">
+              <h3 class="cred-heading">Recognition &amp; Initiatives</h3>
+
+              <div style="margin-bottom: 1.5rem;">
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: #059669; background: rgba(16, 185, 129, 0.1); padding: 0.15rem 0.5rem; border-radius: 9999px;">Selected Contributor</span>
+                <h4 style="font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; margin-top: 0.4rem;">NSoC 2026 (Nexus Spring of Code)</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Selected for open-source engineering program contributing to real-world codebases.</p>
+              </div>
+
+              <div style="margin-bottom: 1.5rem;">
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: #2563EB; background: rgba(37, 99, 235, 0.1); padding: 0.15rem 0.5rem; border-radius: 9999px;">Shortlisted</span>
+                <h4 style="font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; margin-top: 0.4rem;">Gemini Ambassador Program</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Shortlisted for Google developer community initiative supporting GenAI tooling.</p>
+              </div>
+
+              <div style="margin-bottom: 1.5rem;">
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-red); background: var(--accent-red-subtle); padding: 0.15rem 0.5rem; border-radius: 9999px;">Hackathon Concept</span>
+                <h4 style="font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; margin-top: 0.4rem;">Agri-Oracle (SIH 2025)</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Smart India Hackathon project proposal: AI-powered parametric crop insurance utilizing satellite weather metrics for automated claim triggers.</p>
+              </div>
+
+              <div>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: #7C3AED; background: rgba(124, 58, 237, 0.1); padding: 0.15rem 0.5rem; border-radius: 9999px;">Hackathon Participation</span>
+                <h4 style="font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; margin-top: 0.4rem;">Prajwalan 2026</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Collaborative engineering hackathon participation with Team ctrl freaks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10 — CONTACT & FOOTER
+         ======================================================================== -->
+    <section id="contact" class="section-spacer contact-section">
+      <div class="container">
+        <div class="section-eyebrow">START A CONVERSATION</div>
+        <h2 class="section-title">
+          Got a project?<br />Let's build something real.
+        </h2>
+        <p class="section-description">
+          Whether you need an AI-powered product engineered from scratch, desktop automation tools, a high-performance web platform, or a commercial video campaign — my inbox is open.
+        </p>
+
+        <div class="contact-layout" style="margin-top: 3.5rem;">
+          <!-- Left: Direct Contact Channels -->
+          <div class="contact-channels reveal">
+            <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; margin-bottom: 0.75rem;">Direct Channels</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+              Reach out directly via email, phone, or connect across professional platforms.
+            </p>
+
+            <div class="contact-quick-pill-list">
+              <a href="mailto:sasirithvik92@gmail.com" class="contact-pill-item">
+                <span>sasirithvik92@gmail.com</span>
+                <span>Email ↗</span>
+              </a>
+
+              <a href="tel:+919346248585" class="contact-pill-item">
+                <span>+91 93462 48585</span>
+                <span>Phone / WhatsApp ↗</span>
+              </a>
+
+              <a href="https://github.com/Rithvik-bit" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
+                <span>github.com/Rithvik-bit</span>
+                <span>GitHub ↗</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/sasi-rithvik-664939386/" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
+                <span>linkedin.com/in/sasi-rithvik</span>
+                <span>LinkedIn ↗</span>
+              </a>
+
+              <a href="https://www.instagram.com/rithvik_editzx/" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
+                <span>@rithvik_editzx</span>
+                <span>Instagram ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Project Inquiry Form -->
+          <div class="contact-form-side reveal">
+            <div class="contact-form-card double-bezel">
+              <div class="double-bezel-inner">
+                <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; margin-bottom: 1.25rem;">
+                  Send an Inquiry
+                </h3>
+                <form id="direct-contact-form">
+                  <div class="form-group">
+                    <label class="form-label" for="form-name">Your Name</label>
+                    <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="form-email">Your Email</label>
+                    <input type="email" id="form-email" name="email" class="form-input" placeholder="alex@company.com" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="form-cat">Project Discipline</label>
+                    <select id="form-cat" name="category" class="form-select">
+                      <option value="Applied AI & Systems">Applied AI &amp; Agentic Systems</option>
+                      <option value="Full-Stack Web Engineering">Full-Stack Web Engineering</option>
+                      <option value="Desktop Application / Audio">Desktop Application / System Utility</option>
+                      <option value="Commercial Video & Cinematography">Commercial Video &amp; Cinematography</option>
+                      <option value="REDz Venture Collaboration">REDz Venture Services</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="form-message">Project Overview</label>
+                    <textarea id="form-message" name="message" class="form-textarea" placeholder="Describe your timeline, technical goals, or campaign brief..." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn-primary star-border" style="width: 100%; justify-content: center; padding: 0.85rem 1.5rem;">
+                    <span>Send Message to Rithvik</span>
+                    <span class="btn-arrow-bubble">↗</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site Footer -->
+        <footer class="site-footer">
+          <div class="footer-inner">
+            <div class="footer-copy">
+              &copy; 2026 Appala Venkat Sasi Rithvik. Founder of REDz (AI · WEB · SYSTEMS).
+            </div>
+            <div class="footer-time-badge">
+              <span>Bhimavaram, AP, India</span>
+              <span>·</span>
+              <span id="live-ist-clock">Loading IST...</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       ACCESSIBLE CASE STUDY MODAL DRAWER
+       ======================================================================== -->
+  <div id="case-study-modal" class="modal-overlay-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog-panel">
+      <button id="case-study-close" class="modal-close-trigger" aria-label="Close Case Study">✕</button>
+      <div id="case-study-body">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CREATIVE CAMPAIGN DETAIL MODAL
+       ======================================================================== -->
+  <div id="creative-modal" class="modal-overlay-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog-panel" style="max-width: 720px;">
+      <button id="creative-close" class="modal-close-trigger" aria-label="Close Campaign Details">✕</button>
+      <div id="creative-body" style="padding-top: 1.5rem;">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/bundle.js"></script>
+</body>
+</html>

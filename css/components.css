@@ -1,0 +1,196 @@
+/* ==========================================================================
+   REACT BITS COMPONENTS STYLESHEET
+   TechText, FluxLines, Lanyard, StarBorder
+   ========================================================================== */
+
+/* 1. TechText — Blueprint Canvas Wordmark */
+.tech-text {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  min-height: 160px;
+  touch-action: pan-y;
+  user-select: none;
+  cursor: grab;
+  overflow: hidden;
+  border-radius: var(--radius-outer, 20px);
+  background: var(--bg-card, #FFFFFF);
+  border: 1px solid var(--border-outer, rgba(0, 0, 0, 0.08));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-text:hover {
+  border-color: rgba(229, 9, 20, 0.3);
+  box-shadow: 0 12px 30px rgba(229, 9, 20, 0.08);
+}
+
+[data-theme="dark"] .tech-text {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.015) 50%, rgba(255, 255, 255, 0.035) 100%), rgba(6, 6, 10, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.3), 0 20px 45px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+}
+
+[data-theme="dark"] .tech-text:hover {
+  border-color: rgba(229, 9, 20, 0.4);
+  box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.45), 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 30px rgba(229, 9, 20, 0.2);
+}
+
+.tech-text-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tech-text-hint {
+  position: absolute;
+  bottom: 0.65rem;
+  right: 1rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6875rem;
+  color: var(--text-muted, #8E8E93);
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.tech-text:hover .tech-text-hint {
+  opacity: 1;
+}
+
+/* 2. FluxLines — Persistent Full-Page WebGL2 Ambient Lines */
+.flux-lines-container {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  opacity: 0.45;
+  transition: opacity 0.5s ease;
+}
+
+[data-theme="dark"] .flux-lines-container {
+  opacity: 0.55;
+}
+
+.flux-lines-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* 3. Lanyard — 3D Interactive Badge */
+/* 3. Lanyard — 3D Interactive Badge Hanging Freely from the Top */
+.hero-visual-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.lanyard-standalone {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  height: 560px;
+  overflow: visible;
+  touch-action: pan-y;
+  cursor: grab;
+  margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+  .lanyard-standalone {
+    height: 700px;
+    margin-top: -6rem; /* Extends strap seamlessly up towards the top of the hero */
+  }
+}
+
+.lanyard-standalone:active {
+  cursor: grabbing;
+}
+
+.lanyard-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  overflow: visible;
+}
+
+.lanyard-floating-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(18, 18, 22, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  margin-top: -1.25rem;
+  z-index: 2;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  user-select: none;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="light"] .lanyard-floating-hint {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #121214;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.lanyard-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #E50914;
+  box-shadow: 0 0 6px #E50914;
+  animation: lanyard-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes lanyard-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+/* 4. StarBorder — Luminous Racing Trail */
+.star-border {
+  position: relative !important;
+  isolation: isolate;
+  overflow: visible !important;
+}
+
+.star-border > * {
+  position: relative;
+  z-index: 2;
+}
+
+.star-border__light {
+  position: absolute;
+  top: -48px;
+  left: -48px;
+  z-index: 1;
+  width: calc(100% + 96px);
+  height: calc(100% + 96px);
+  pointer-events: none;
+}

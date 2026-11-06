@@ -1,0 +1,21 @@
+{
+  "name": "Appala Venkat Sasi Rithvik — Software Developer & Creative Technologist",
+  "short_name": "Rithvik",
+  "description": "Portfolio of Appala Venkat Sasi Rithvik. Founder of REDz, building AI automations, agentic systems, full-stack web applications, and directing cinematic commercial campaigns.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F5",
+  "theme_color": "#D62828",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
