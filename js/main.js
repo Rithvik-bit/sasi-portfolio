@@ -775,7 +775,7 @@ function initInteractiveComponents() {
   if (lanyardContainer) {
     try {
       lanyardInstance = initLanyard(lanyardContainer, {
-        frontImage: 'assets/profile.jpg',
+        frontImage: 'assets/redz-portfolio-card.png',
         backImage: 'assets/redz-logo.png',
         imageFit: 'cover',
         cardColor: '#0E0E12',
